@@ -62,28 +62,33 @@ googleAnalytics = "UA-123-45"
         name = "Adolescents"
         url = "/eleves/adolescent"
         parent = "eleves"
-        weight = 2
-    
+        weight = 8
+    [[menu.main]]
+        identifier = "handicap"
+        name = "Handicapés"
+        url = "/eleves/handicap"
+        parent = "eleves"
+        weight = 12    
     [[menu.main]]
         identifier = "individuel"
         name = "Adulte Indiviuel"
         url = "/eleves/individuel"
         parent = "eleves"
-        weight = 3
+        weight = 20
 
     [[menu.main]]
         identifier = "senior"
         name = "Seniors"
         url = "/eleves/senior"
         parent = "eleves"
-        weight = 4
+        weight = 30
 
     [[menu.main]]
         identifier = "groupe"
         name = "Groupes"
         url = "/eleves/groupe"
         parent = "eleves"
-        weight = 5
+        weight = 40
 
     [[menu.main]]
         identifier = "structure"
