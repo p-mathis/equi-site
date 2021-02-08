@@ -1,0 +1,6 @@
+<div class="container-fluid">
+    <div class="clearfix">
+        <img src="{{ .Site.BaseURL }}/media/{{ .Get "img" }}" class="img-thumbnail col-md-6 float-md-end mb-3 ms-md-3" alt="{{ .Get "alt" }}">
+    </div>
+    {{ .Inner | markdownify}}
+</div>

@@ -1,0 +1,66 @@
+:root {
+    --main-bg-color: #f7eade;
+    --main-title-color: #ff090d;
+    /* --main-title-color: #994159; */
+
+    --second-bg-color: #994159;
+    --footer-bg-color: #3a353660;
+    --third-bg-color: #13110f;
+
+}
+
+body {
+    background-color: var(--main-bg-color) !important;
+}
+
+h1 {
+    color: var(--main-title-color);
+}
+
+h2 {
+    color: var(--main-title-color);
+}
+
+.center {
+    text-align: center;
+  }
+  
+.mycolor {
+	color: var(--main-title-color);
+}
+
+/* Modifie background color */
+.backg1 {
+    /* background-color: var(--second-bg-colors); */
+    background-color: #33b3cb;
+}
+.backg2 {
+    background-color: #6ce4f2;
+}
+/* pour centrer les videos */
+/* videocenter {
+    display: block;
+    margin: 0 auto;
+ }
+  */
+
+.footer1 {
+    background-color: var(--footer-bg-color);
+}
+
+/* d'après page contact de pakstech  https://pakstech.com/blog/hugo-single-page-template/ */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+

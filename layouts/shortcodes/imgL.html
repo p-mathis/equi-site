@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-5">
+            <img class="img-fluid rounded" src="{{ .Site.BaseURL }}/media/{{ .Get "img" }}" alt="{{ .Get "alt" }}">
+        </div>
+        <div class="col-sm px-5 border">
+
+             {{ .Inner | markdownify}} 
+
+        </div>        
+    </div>
+</div>

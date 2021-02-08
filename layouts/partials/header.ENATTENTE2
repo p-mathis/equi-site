@@ -1,0 +1,47 @@
+<header>
+
+    <div class="container-fluid mb-5">
+        <div class="jumbotron jumbotron-fluid text-center" style="background-image: url(/media/chevaux/chevaux-entete.jpg);  background-position: center;background-size: cover; background-repeat:no-repeat;background-attachment: local;opacity:0.85; min-height:300px;">
+            <h1 class="display-1 mycolor" ><strong>{{ .Site.Title }}</h1></strong></h1>
+            {{partial "slogan.html"}}
+        </div>
+    </div>
+       
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="/" title="home"><span class="logo"><h1>{{ .Site.Title }}</h1></span></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        <!-- {{ if .HasChildren }}
+                            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                                <a href="#">
+                                    {{ .Pre }}
+                                    <span>{{ .Name }}</span>
+                                </a>
+                            </li>
+                            <ul class="sub-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                                {{ range .Children }}
+                                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                                        <a href="{{ .URL }}">{{ .Name }}</a>
+                                    </li
+                                {{ end }}
+                            </ul>
+                        {{ else }} -->
+                            <li>
+                                <a href="{{ .URL }}">
+                                    {{ .Pre }}
+                                    <span>{{ .Name }}</span>
+                                </a>
+                            </li>
+                        <!-- {{ end }} -->
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

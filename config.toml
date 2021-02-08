@@ -1,0 +1,166 @@
+baseURL = "http://example.org/"
+languageCode = "fr-FR"
+title = "Ferme Équestre de Saint-Gauzy"
+
+googleAnalytics = "UA-123-45"
+
+#voir https://discourse.gohugo.io/t/how-to-center-text/22070
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+    
+    [[menu.main]]
+        identifier = "enseignement"
+        name = "Enseignement"
+        url = "#"
+        weight = 10    
+
+    [[menu.main]]
+        identifier = "equipe"
+        name = "L’Équipe"
+        url = "/enseignement/equipe"
+        parent = "enseignement"
+        weight = 1
+    [[menu.main]]
+        identifier = "equitation_autrement"
+        name = "L’Équitation Autrement"
+        url = "/enseignement/equitation_autrement"
+        parent = "enseignement"
+        weight = 2
+    [[menu.main]]
+        identifier = "equitation_classique"
+        name = "L’Équitation Classique"
+        url = "/enseignement/equitation_classique"
+        parent = "enseignement"
+        weight = 3
+    [[menu.main]]
+        identifier = "coaching"
+        name = "Coaching"
+        url = "/enseignement/coaching"
+        parent = "enseignement"
+        weight = 6
+
+
+    [[menu.main]]
+        identifier = "eleves"
+        name = "Nos Eleves"
+        url = "#"
+        weight = 20 
+
+    [[menu.main]]
+        identifier = "enfant"
+        name = "Poney-Club"
+        url = "/eleves/enfant"
+        parent = "eleves"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "adolescent"
+        name = "Adolescents"
+        url = "/eleves/adolescent"
+        parent = "eleves"
+        weight = 2
+    
+    [[menu.main]]
+        identifier = "individuel"
+        name = "Adulte Indiviuel"
+        url = "/eleves/individuel"
+        parent = "eleves"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "senior"
+        name = "Seniors"
+        url = "/eleves/senior"
+        parent = "eleves"
+        weight = 4
+
+    [[menu.main]]
+        identifier = "groupe"
+        name = "Groupes"
+        url = "/eleves/groupe"
+        parent = "eleves"
+        weight = 5
+
+    [[menu.main]]
+        identifier = "structure"
+        name = "La Structure"
+        url = "#"
+        weight = 30
+
+    [[menu.main]]
+        identifier = "chevaux"
+        name = "Nos Chevaux"
+        url = "/structure/chevaux"
+        parent = "structure"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "manege"
+        name = "Le Manège"
+        url = "/structure/manege"
+        parent = "structure"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "carriere"
+        name = "Les Carrières"
+        url = "/structure/carriere"
+        parent = "structure"
+        weight = 5
+
+    [[menu.main]]
+        identifier = "ecurie"
+        name = "Les Écuries"
+        url = "/structure/ecurie"
+        parent = "structure"
+        weight = 8
+
+    [[menu.main]]
+        identifier = "environnement"
+        name = "L'Environnement'"
+        url = "/structure/environnement"
+        parent = "structure"
+        weight = 25  
+
+    [[menu.main]]
+        identifier = "paddock"
+        name = "Prés et Paddocks"
+        url = "/structure/paddock"
+        parent = "structure"
+        weight = 28          
+
+    [[menu.main]]
+        identifier = "clubhouse"
+        name = "L'Accueil"
+        url = "/structure/accueil"
+        parent = "structure"
+        weight = 20
+    
+
+    [[menu.main]]
+        identifier = "actualite"
+        name = "Actualités"
+        url = "/utilities/actualite"
+        weight = 48
+
+    [[menu.main]]
+        identifier = "tarifs"
+        name = "Tarifs"
+        url = "/utilities/tarifs"
+        weight = 50
+
+    [[menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/utilities/contact"
+        weight = 70
+
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+        weight = 80
