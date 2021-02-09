@@ -16,7 +16,7 @@ googleAnalytics = "UA-123-45"
         identifier = "enseignement"
         name = "Enseignement"
         url = "#"
-        weight = 10    
+        weight = 20    
 
     [[menu.main]]
         identifier = "equipe"
@@ -48,7 +48,7 @@ googleAnalytics = "UA-123-45"
         identifier = "eleves"
         name = "Nos Eleves"
         url = "#"
-        weight = 20 
+        weight = 30
 
     [[menu.main]]
         identifier = "enfant"
@@ -94,7 +94,7 @@ googleAnalytics = "UA-123-45"
         identifier = "structure"
         name = "La Structure"
         url = "#"
-        weight = 30
+        weight = 40
 
     [[menu.main]]
         identifier = "chevaux"
@@ -122,7 +122,7 @@ googleAnalytics = "UA-123-45"
         name = "Les Écuries"
         url = "/structure/ecurie"
         parent = "structure"
-        weight = 8
+        weight = 40
 
     [[menu.main]]
         identifier = "environnement"
@@ -150,22 +150,22 @@ googleAnalytics = "UA-123-45"
         identifier = "actualite"
         name = "Actualités"
         url = "/utilities/actualite"
-        weight = 48
+        weight = 4
 
     [[menu.main]]
         identifier = "tarifs"
         name = "Tarifs"
         url = "/utilities/tarifs"
-        weight = 50
+        weight = 70
 
     [[menu.main]]
         identifier = "contact"
         name = "Contact"
         url = "/utilities/contact"
-        weight = 70
+        weight = 80
 
     [[menu.main]]
         identifier = "blog"
         name = "Blog"
         url = "/blog"
-        weight = 80
+        weight = 8
